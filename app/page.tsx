@@ -1,7 +1,9 @@
 import Image from 'next/image'
 import { roboto } from './fonts'
 import { BsFillMoonStarsFill } from "react-icons/bs";
+import { FiGithub, FiLinkedin, FiFacebook } from 'react-icons/fi'
 import avatar from '../public/avatar.png';
+import Socials from '../app/components/socials';
 
 export default function Home() {
   return (
@@ -33,7 +35,12 @@ export default function Home() {
             </div>
             <Image src={avatar} alt={'avatar'}/>
         </div>
-        
+        {/* Socials */}
+        <div className='px-44 pt-28 flex justify-between'>
+          <Socials social={<FiGithub className='text-7xl'/>} />
+          <Socials social={<FiLinkedin className='text-7xl'/>} />
+          <Socials social={<FiFacebook className='text-7xl'/>} />
+        </div>
       </section>
     </main>
   )
