@@ -37,7 +37,7 @@ export default function Home() {
             <div>
               <h2 className='text-8xl font-bold mb-4'>Arawela Delmo</h2>
               <h3 className='text-3xl font-bold mb-14'>Developer. Majoring in Computer Science.</h3>
-              <p className='text-xl max-w-xl leading-8'>
+              <p className={`${roboto.className} text-xl max-w-xl leading-8`}>
                 As a dedicated student and developer, I thrive on the challenges
                 that web development and mobile app development offer.
                 My coding journey is fueled not only by my love for technology
@@ -60,8 +60,8 @@ export default function Home() {
         </div>
         {/* Skills + Tools */}
         <div className='flex flex-col items-center'>
-          <h3 className='font-bold text-3xl'>Skills + Tools</h3>
-          <h2 className='font-bold text-7xl'>What I've Explored</h2>
+          <h3 className={`${roboto.className} font-bold text-3xl`}>Skills + Tools</h3>
+          <h2 className='font-bold text-7xl'>What Ive Explored</h2>
           <div className='bg-bgskills w-full h-96 rounded-xl mt-7 mb-64 p-12 flex flex-wrap justify-start gap-4'>
             <DiPython className='text-8xl'/>
             <DiJava className='text-8xl'/>
