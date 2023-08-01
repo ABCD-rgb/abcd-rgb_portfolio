@@ -17,7 +17,7 @@ export default function Home() {
               <BsFillMoonStarsFill className='cursor-pointer text-2xl' />
             </li>
             <li>
-              <a className='text-2xl bg-accentPurple px-5 py-1 rounded-xl ml-4' href="#">Resume</a>
+              <a className='text-2xl bg-accentPurple px-5 py-2 rounded-xl ml-5' href="#">Resume</a>
             </li>
           </ul>
         </nav>
@@ -36,10 +36,16 @@ export default function Home() {
             <Image src={avatar} alt={'avatar'}/>
         </div>
         {/* Socials */}
-        <div className='px-44 pt-28 flex justify-between'>
-          <Socials social={<FiGithub className='text-7xl'/>} />
-          <Socials social={<FiLinkedin className='text-7xl'/>} />
-          <Socials social={<FiFacebook className='text-7xl'/>} />
+        <div className='px-44 pt-28 mb-40 flex justify-between flex-wrap'>
+          <a href='https://github.com/ABCD-rgb' target='_blank'>
+            <Socials social={<FiGithub className='text-7xl'/>} />
+          </a>
+          <a href='https://www.linkedin.com/in/arawela-delmo/' target='_blank'>
+            <Socials social={<FiLinkedin className='text-7xl'/>} />
+          </a>
+          <a href='https://www.facebook.com/aweh.delmo/' target='_blank'>
+            <Socials social={<FiFacebook className='text-7xl'/>} />
+          </a>
         </div>
       </section>
     </main>
