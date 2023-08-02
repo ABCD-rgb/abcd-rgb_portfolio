@@ -17,37 +17,37 @@ import Socials from './components/socials';
 export default function Home() {
   return (
     <main>
-      <section className='min-h-screen pt-16 mx-44'>
+      <section className='min-h-screen pt-16 mx-14 md:mx-44'>
         <div className='absolute w-96 h-96 bg-accentGreen rounded-full blur-3xl opacity-40 overflow-hidden -left-56 top-96'></div>
         <div className='absolute w-96 h-96 bg-accentPurple rounded-full blur-3xl opacity-50 overflow-hidden right-48 -top-64'></div>
         {/* Navbar */}
-        <nav className='mb-32 flex justify-between'>
-          <h1 className='text-2xl font-bold'>ARAWELADELMO</h1>
+        <nav className='mb-32 flex justify-around md:justify-between'>
+          <h1 className='text-lg md:text-2xl font-bold'>ARAWELADELMO</h1>
           <ul className='flex items-center'>
             <li>
               {/* <BsFillMoonStarsFill className='cursor-pointer text-2xl' /> */}
             </li>
             <li>
-              <Link className='text-2xl bg-accentPurple px-5 py-2 rounded-xl ml-5' href="/resume">Resume</Link>
+              <Link className=' text-xl md:text-2xl bg-accentPurple px-5 py-2 rounded-xl shadow-lg ml-5 hover:bg-transparent hover:border-accentPurple hover:border-2 hover:shadow-lg hover:ring-2' href="/resume">Résumé</Link>
             </li>
           </ul>
         </nav>
         {/* About Me */}
-        <div className='flex items-center justify-between'>
+        <div className='flex flex-col items-center justify-between md:flex-row'>
             <div>
-              <h2 className='text-8xl font-bold mb-4'>Arawela Delmo</h2>
-              <h3 className='text-3xl font-bold mb-14'>Developer. Majoring in Computer Science.</h3>
-              <p className={`${roboto.className} text-xl max-w-xl leading-8`}>
+              <h2 className='text-4xl font-bold mb-4 md:text-8xl'>Arawela Delmo</h2>
+              <h3 className='text-xl font-bold mb-8 md:mb-14 md:text-4xl'>Developer. Majoring in Computer Science.</h3>
+              <p className={`${roboto.className} text-xs max-w-xl leading-8 md:text-base`}>
                 As a dedicated student and developer, I thrive on the challenges
                 that web development and mobile app development offer.
                 My coding journey is fueled not only by my love for technology
                 but also by my insatiable curiosity to uncover the endless possibilities it holds. 
               </p>
             </div>
-            <Image src={avatar} alt={'avatar'}/>
+            <Image src={avatar} alt={'avatar'} className='mt-5'/>
         </div>
         {/* Socials */}
-        <div className='px-40 pt-20 mb-40 flex justify-around flex-wrap content-between gap-7'>
+        <div className='px-40 pt-20 mb-40 flex justify-around flex-wrap content-between gap-7 '>
           <a href='https://github.com/ABCD-rgb' target='_blank'>
             <Socials social={<FiGithub className='text-7xl'/>} />
           </a>
@@ -60,24 +60,29 @@ export default function Home() {
         </div>
         {/* Skills + Tools */}
         <div className='flex flex-col items-center'>
-          <h3 className={`${roboto.className} font-bold text-3xl`}>Skills + Tools</h3>
-          <h2 className='font-bold text-7xl'>What Ive Explored</h2>
+          <h3 className={`${roboto.className} font-bold text-lg lg:text-3xl`}>Skills + Tools</h3>
+          <h2 className='font-bold text-3xl lg:text-7xl'>What Ive Explored</h2>
           <div className='bg-bgskills w-full h-96 rounded-xl mt-7 mb-64 p-12 flex flex-wrap justify-start gap-4'>
-            <DiPython className='text-8xl'/>
-            <DiJava className='text-8xl'/>
-            <DiDart className='text-8xl'/>
-            <RiFlutterFill className='text-8xl'/>
-            <FiGithub className='text-8xl'/>
-            <DiHtml5 className='text-8xl'/>
-            <DiCss3 className='text-8xl'/>
-            <DiJavascript1 className='text-8xl'/>
-            <DiReact className='text-8xl'/>
-            <TbBrandNextjs className='text-8xl'/>
-            <SiTailwindcss className='text-8xl'/>
-            <DiMongodb className='text-8xl'/>
-            <SiMariadb className='text-8xl'/>
-            <SiFirebase className='text-8xl'/>
+            <DiPython className='m-auto text-5xl lg:text-8xl'/>
+            <DiJava className='m-auto text-5xl lg:text-8xl'/>
+            <DiDart className='m-auto text-5xl lg:text-8xl'/>
+            <RiFlutterFill className='m-auto text-5xl lg:text-8xl'/>
+            <FiGithub className='m-auto text-5xl lg:text-8xl'/>
+            <DiHtml5 className='m-auto text-5xl lg:text-8xl'/>
+            <DiCss3 className='m-auto text-5xl lg:text-8xl'/>
+            <DiJavascript1 className='m-auto text-5xl lg:text-8xl'/>
+            <DiReact className='m-auto text-5xl lg:text-8xl'/>
+            <TbBrandNextjs className='m-auto text-5xl lg:text-8xl'/>
+            <SiTailwindcss className='m-auto text-5xl lg:text-8xl'/>
+            <DiMongodb className='m-auto text-5xl lg:text-8xl'/>
+            <SiMariadb className='m-auto text-5xl lg:text-8xl'/>
+            <SiFirebase className='m-auto text-5xl lg:text-8xl'/>
           </div>
+        </div>
+        {/* Portfolio */}
+        <div>
+          <h2 className='font-bold text-3xl md:text-7xl py-5'>Portfolio</h2>
+          <h3 className={`${roboto.className} font-bold text-lg md:text-3xl pb-20`}>Coming soon.</h3>
         </div>
       </section>
     </main>
