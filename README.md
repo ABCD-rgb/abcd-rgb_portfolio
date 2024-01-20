@@ -3,4 +3,4 @@ Contributor: Arawela Delmo
 Created on: Tue Aug 1 13:48:37 2023  
 Created for the purpose of learning next.js and deploying to vercel  
 
-### Website Link: https://abcd-rgb-portfolio-1.vercel.app/
+### Website Link: https://abcd-rgb-portfolio.vercel.app/

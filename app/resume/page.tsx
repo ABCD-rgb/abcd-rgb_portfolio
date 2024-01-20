@@ -1,6 +1,7 @@
+import Image from "next/image";
 import Link from "next/link";
 import { BsConeStriped } from 'react-icons/bs';
-
+import resume from '../../public/resume.jpg';
 export default function Page() {
     return (
         <section className='min-h-screen pt-16 mx-20 md:mx-44'>
@@ -17,9 +18,12 @@ export default function Page() {
                     </li>
                 </ul>
             </nav>
-            <div className="bg-bgskills w-full h-96 rounded-xl mt-7 mb-64 p-12 bg-opacity-50 shadow-lg shadow-accentPurple flex flex-col items-center justify-center gap-5 md:flex-row">
-                <h2 className='text-5xl md:text-8xl font-bold mb-4 text-center'>Coming soon.</h2>
-                <BsConeStriped className="text-6xl md:text-9xl text-center text-orange-400"/>
+            <div className="bg-bgskills w-full h-96 rounded-xl mt-7 mb-64 p-12 bg-opacity-50 shadow-lg shadow-accentPurple flex flex-row items-start justify-center gap-5 md:flex-row">
+                <div className="w-full">
+                    <Image src={resume} alt={'resume'} className="mb-5"/>
+                </div>
+                {/* <h2 className='text-5xl md:text-8xl font-bold mb-4 text-center'>Coming soon.</h2>
+                <BsConeStriped className="text-6xl md:text-9xl text-center text-orange-400"/> */}
             </div>
         </section>
     )

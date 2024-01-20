@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import Link from 'next/link';
+import Link from 'next/link'; 
 import { roboto } from './fonts';
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { FiGithub, FiLinkedin, FiFacebook } from 'react-icons/fi'
@@ -83,6 +83,7 @@ export default function Home() {
         <div>
           <h2 className='font-bold text-3xl md:text-7xl py-5'>Portfolio</h2>
           <h3 className={`${roboto.className} font-bold text-lg md:text-3xl pb-20`}>Coming soon.</h3>
+ 
         </div>
       </section>
     </main>
